@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: sans-serif;
+}
+
+h1{
+    margin-left: 5px;
+    margin-top:5px;
+    border-left: 5px solid red;
+}
+
+.container{
+    height: 500px;
+    width: 500px;
+    margin: 5px;
+}
+
+.grid-box{
+    display: grid;
+    grid-template-columns: repeat(25, 1fr);
+    grid-template-rows: repeat(25, 1fr);
+    gap: 5px;
+    background-color: black
+}
+
+.grid-box .cube1{
+    background-color: #e5edea ;
+    grid-column:1/7 ;
+    grid-row:1/3 ;
+}
+
+.grid-box .cube2{
+    background-color: #f2e7d5 ;
+    grid-column:7/17 ;
+    grid-row:1/3 ;
+}
+
+.grid-box .cube3{
+    background-color: #f2c968 ;
+    grid-column:17/25 ;
+    grid-row:1/3 ;
+}
+.grid-box .cube4{
+    background-color: #fbfde7 ;
+    grid-column:1/4 ;
+    grid-row:3/9 ;
+}
+.grid-box .cube5{
+    background-color: #dfe8e3 ;
+    grid-column:1/4 ;
+    grid-row:9/20 ;
+}
+.grid-box .cube6{
+    background-color: #f4c65a ;
+    grid-column:1/4 ;
+    grid-row:20/26 ;
+}
+.grid-box .cube7{
+    background-color: #d62d24 ;
+    grid-column:4/17 ;
+    grid-row: 3/16;
+}
+.grid-box .cube8{
+    background-color: #130409 ;
+    grid-column:4/11 ;
+    grid-row:16/23 ;
+}
+.grid-box .cube9{
+    background-color: #e2ddd8 ;
+    grid-column:4/11 ;
+    grid-row:23/26 ;
+}
+.grid-box .cube10{
+    background-color: #c0bfba ;
+    grid-column:11/17 ;
+    grid-row:16/20 ;
+}
+.grid-box .cube11{
+    background-color: #dde1d3 ;
+    grid-column:11/17 ;
+    grid-row:20/23 ;
+}
+.grid-box .cube12{
+    background-color: #0c0306 ;
+    grid-column: 11/17;
+    grid-row:23/25 ;
+}
+.grid-box .cube13{
+    background-color: #edcc6b ;
+    grid-column:17/25 ;
+    grid-row:3/9 ;
+}
+
+.grid-box .cube14{
+    background-color: #dfe5d0 ;
+    grid-column:17/21 ;
+    grid-row:9/16 ;
+}
+.grid-box .cube15{
+    background-color: #f2eee2 ;
+    grid-column:21/25 ;
+    grid-row:9/16 ;
+}
+.grid-box .cube16{
+    background-color: #d6dee0 ;
+    grid-column:17/25 ;
+    grid-row:16/20 ;
+}
+.grid-box .cube17{
+    background-color: #241785 ;
+    grid-column:17/25 ;
+    grid-row:20/25;
+}
+.grid-box .cube18{
+    background-color: #dfdfde ;
+    grid-column:11/25 ;
+    grid-row:25/26 ;
+}
+.grid-box .cube19{
+    background-color: #fbfce6 ;
+    grid-column:25/26 ;
+    grid-row:1/20 ;
+}
+.grid-box .cube20{
+    background-color: #d6352f ;
+    grid-column:25/26 ;
+    grid-row:20/26 ;
+}
