@@ -58,6 +58,8 @@ body{
     border-radius: 4px;
  }
 
+
+
  /*Horisontal Nav*/
 
  .horisontal-nav{
@@ -86,13 +88,13 @@ body{
 
  .container{
     display: grid;
-    width: 80%;
+    width: 70%;
     min-height: calc(100vh - 104px);
     grid-template-columns: 50% 50%;
     gap:10px;
     color: #161A30;
     position: relative;
-    left:10%;
+    left:15%;
  }
 
  .container .left-grid{
@@ -106,6 +108,7 @@ body{
     display: grid;
     grid-template-columns: 150px 1fr;
     grid-template-rows:2.35rem 150px 50px;
+    justify-content: center;
     border: 1px none black;
     border-radius: 5px;
     background-color: aliceblue;
@@ -131,11 +134,11 @@ body{
 }
 
 /* problem deka ne go prifaka text decoration, koga ke go dodadam i a tagot prifakja text-decoration no gubi pozicija*/
-.more-btn {
-    
+.box .more-btn a{
     text-decoration: none;
     color: #31304D;
     background-color: #F0ECE5;
+    grid-row: 2/3;
     grid-column: 2/3;
     padding: 7px 5px;
     justify-self:flex-end;
@@ -157,7 +160,7 @@ body{
     margin-top: 10px;
     border-radius: 4px;
     display: grid;
-    grid-template-rows: 2.9 rem 1fr 70px;
+    grid-template-rows: 2.9 rem 1fr 1fr;
 }
 
 .box2 .box-head2{
@@ -177,7 +180,7 @@ body{
     text-decoration: none;
     padding: 5px 10px;
     background-color: rgb(255, 255, 255);
-    display: inline-block;
+    display: grid;
     justify-self: flex-end;
     border-radius: 4px;
     margin:5px;
@@ -200,6 +203,100 @@ body{
     padding-left: 5px;
 }
 
-.box2-1 .weather{
-    padding:10px !important;
+/* ovoj ne go prifakja stylingot*/
+.box2 .more-btn a{
+    text-decoration: none;
+    color: #31304D;
+    background-color: #F0ECE5;
+    grid-column: 2/3;
+    padding: 7px 5px;
+    justify-self:flex-end;
+    margin: 5px;
+    border-radius: 4px;
 }
+
+/*ne mozam ni hover da mu dodelam  */
+.more-btn a:hover{
+    background-color:#31304D;
+    color: #F0ECE5;
+}
+
+.one-column{
+    grid-template-columns: 100%;
+    min-height: min-content;
+      
+}
+
+.wide{
+    width: 70%;
+    justify-self: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+.box .aboutSize{
+    justify-self: center;
+    min-width:fit-content
+}   
+
+.box .img2 {
+    float: left;
+    grid-column: 1/2;
+    margin-right: 10px;
+  
+}
+
+@media screen and (max-width: 1370px){
+    .container{
+        width: 100%;
+        left: 0;
+        gap:0;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .container{
+        width: 100%;
+        grid-template-columns: 100%;
+        left: 0;
+        gap:0;
+        
+    }
+
+    .container .left-grid{
+        margin-right: 10px;
+    }
+    
+    .container .right-grid{
+        justify-self: center;
+        width: 100%;
+        margin-left: 10px;
+        margin-right: 0px;
+        margin-top:0px;
+        }
+
+    .box2{
+        margin-top: 0px;
+    }
+
+    .box2-1{
+        justify-self: center;
+        left: 10%;
+    }
+}
+
+@media screen and (max-width: 578px){
+    .nav-bar .header-ul li{
+        display: none;
+    }
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+
+    .horisontal-nav ul .list-item{
+        padding:0;
+    }
+}
+
